@@ -4,13 +4,13 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 header{
     font-size: 24px;
     color: #F9FAF8;
     display: flex;
-    flex-wrap: wrap;
     gap: 64px;
     width: 100%;
     justify-content: space-between;
@@ -44,10 +44,11 @@ button{
     justify-content: flex-end;
 }
 
-.wraper{
+.wrapper{
     display: flex;
     flex-direction: column;
     padding: 0px 332px;
+    flex-shrink: 0;
 }
 
 .section-first{
@@ -109,9 +110,9 @@ button{
     height: 100%;
     font-size: 18px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 48px;
-
+    gap: 36px;
 }
 
 .info-item{
@@ -141,7 +142,7 @@ button{
 .quote{
     padding: 0px;
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     flex-shrink: 0;
     font-size: 36px;
     font-weight: lighter;
@@ -167,6 +168,7 @@ button{
     padding: 48px;
     color: white;
     display: flex;
+    flex-shrink: 3;
     background-color: #3B82F6;
     justify-content: space-around;
     align-items: center;
@@ -190,7 +192,20 @@ button{
 footer{
     color: white;
     display: flex;
+    flex-shrink: 1;
     justify-content: center;
     align-items: center;
     padding: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+    .contact-panel, .quote-panel{
+        padding: 150px 0px;
+    }
+    .section-first, .information{
+        padding: 64px 0px;
+    }
+    .wrapper{
+        padding: 0px;
+    }
 }
