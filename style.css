@@ -1,15 +1,20 @@
 body{
-    background-color: black;
+    font-family: Noto sans, sans-serif;
+    background-color: #1F2937;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
+    font-size: 24px;
+    color: #F9FAF8;
     display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    padding-top: 8px;
 }
 
 a{
@@ -17,54 +22,7 @@ a{
     color: white;
 }
 
-.links{
-    font-size: 12px;
-    display: flex;
-    gap: 12px;
-    flex: 0 0 50%;
-    justify-content: flex-end;
-}
-
-.content{
-    background-color: #1F2937;
-    font-family: Noto sans, sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 230px;
-}
-
-.section-first{
-    width: 100%;
-    color: white;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
-    padding: 48px 0px;
-    gap: 32px;
-}
-
-.section-first img{
-    flex: 1 0 100%;
-    background-color: gray;
-    width: 100%;
-    height: 100%;
-}
-
-.signup-container{
-    flex: 0 0 25%;
-}
-
-.signup-container h1{
-    font-size: 35px;
-    margin-bottom: 0px;
-}
-
-.signup-container p{
-    margin-top: 0px;
-    font-size: 12px;
-}
-
-.signup-container button{
+button{
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -77,12 +35,162 @@ a{
     display: flex;
 }
 
-.images{
-    width: 400px;
-    height: 250px;
+.links{
+    color: #E5E7EB;
+    width: auto;
+    font-size: 18px;
     display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.wraper{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 332px;
+}
+
+.section-first{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 64px 0px;
+    gap: 78px;
+}
+
+.section-first img{
+    background-color: gray;
     flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-container{
+    flex: 1 0 35%;
+}
+
+.signup-container h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin: 0px;
+}
+
+.signup-container p{
+    color: #E5E7EB;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.signup-images{
+    background-color: gray;
+    display: flex;
+    flex: 1 1 50%;
+    height: 300px;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.information{
+    background-color: white;
+    padding: 64px 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    text-align: center;
+}
+
+.illustrations{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+
+}
+
+.info-item{
+    width: 200px;
+}
+
+.info-item img{
+    width: 200px;
+    height: 200px;
+    border: 4px solid #3B82F6;
+    border-radius: 16px;
+}
+
+.quote-panel{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 150px 550px;
+}
+
+.quote-panel p{
+    margin: 0px;
+    color: #1F2937;
+}
+
+.quote{
+    padding: 0px;
+    display: flex;
+    justify-content: stretch;
+    flex-shrink: 0;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.author{
+    padding: 0px 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.contact-panel{
+    background-color: white;
+    padding: 150px 332px;
+    
+}
+
+.contact-form{
+    padding: 48px;
+    color: white;
+    display: flex;
+    background-color: #3B82F6;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.contact-form h1{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.contact-form p{
+    margin-top: 0px;
+}
+
+.contact-form button{
+    border-color: white;
+    border-style: solid;
+}
+
+footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
 }
